@@ -1,0 +1,430 @@
+#container_of_my_skills {
+    margin: 50px auto;
+    height: auto;
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+}
+.my_skills_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    gap: 30px;
+}
+.my_skills_container h1 {
+    margin-top: 40px;
+    color: red;
+    text-shadow: -2px -2px 0 black,
+                  2px -2px 0 black,
+                 -2px  2px 0 black,
+                  2px  2px 0 black;
+    filter: drop-shadow(0 0 5px darkgoldenrod);
+    animation: pulse 1.5s infinite linear;
+}
+.skills_container_image {
+    border-radius: 15px;
+    display: inline-block;
+    height: 480px;
+    width: 520px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow:  0    0    8px darkred,
+                10px 10px 10px black;
+}
+.skills_container_info {
+    border-radius: 15px;
+    display: inline-block;
+    height: 480px;
+    width: 755px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow:  0    0    8px darkred,
+                10px 10px 10px black;
+}
+.skills_container_info h1 {
+    margin-top: 40px;
+    color: red;
+    text-shadow: -2px -2px 0 black,
+                  2px -2px 0 black,
+                 -2px  2px 0 black,
+                  2px  2px 0 black;
+    filter: drop-shadow(0 0 5px darkgoldenrod);
+    animation: pulse 1.5s infinite linear;
+}
+.skills_container_info p {
+    text-align: start;
+    text-indent: 1.5em;
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+    text-shadow: -2px -2px 0 black,
+                  2px -2px 0 black,
+                 -2px  2px 0 black,
+                  2px  2px 0 black;
+    animation: pulse 1.5s infinite linear;
+}
+.my_skills_images {
+    margin-top: 15px;
+    height: 330px;
+    width: 440px;
+    border-radius: 15px;
+    animation: pulse 1.5s infinite linear;
+}
+#ms_office_skills_image {
+    margin-top: 60px;
+    height: 180px;
+    width: 440px;
+    border-radius: 15px;
+    animation: pulse 1.5s infinite linear;
+}
+#photoshop_skills_image {
+    height: 350px;
+    width: 350px;
+    border-radius: 15px;
+    animation: pulse 1.5s infinite linear;
+}
+#blender_skills_image {
+    height: 380px;
+    width: 380px;
+    border-radius: 15px;
+    animation: pulse 1.5s infinite linear;
+}
+#javascript_skills_image {
+    height: 350px;
+    width: 380px;
+    border-radius: 15px;
+    animation: pulse 1.5s infinite linear;
+}
+#bootstrap_skills_image {
+    margin-top: 20px;
+    height: 320px;
+    width: 380px;
+    border-radius: 15px;
+    animation: pulse 1.5s infinite linear;
+}
+#sql_skills_image {
+    margin-top: 10px;
+    height: 340px;
+    width: 340px;
+    border-radius: 15px;
+    animation: pulse 1.5s infinite linear;
+}
+#mysql_skills_image {
+    margin-top: 5px;
+    height: 340px;
+    width: 340px;
+    border-radius: 15px;
+    animation: pulse 1.5s infinite linear;
+}
+#webstorm_image {
+    margin-top: 20px;
+    height: 320px;
+    width: 320px;
+    border-radius: 15px;
+    animation: pulse 1.5s infinite linear;
+}
+/*------------------------------------------For mobiles-----------------------------------------*/
+@media (max-width: 480px) {
+    #container_of_my_skills {
+        margin: 25px auto;
+        height: auto;
+        width: 90%;
+        gap: 30px;
+    }
+    .my_skills_container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .my_skills_container h1 {
+        margin-top: 25px;
+        font-size: 25px;
+        color: red;
+        text-shadow: none;
+    }
+    .skills_container_image {
+        border-radius: 15px;
+        display: inline-block;
+        height: auto;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .skills_container_info {
+        height: auto;
+        width: 100%;
+    }
+    .skills_container_info h1 {
+        margin-top: 25px;
+        color: red;
+    }
+    .skills_container_info p {
+        margin: 20px;
+        font-size: 17px;
+        text-shadow: none;
+        animation: none;
+    }
+    .my_skills_images {
+        margin-top: 15px;
+        height: 200px;
+        width: 270px;
+    }
+    #ms_office_skills_image {
+        margin-top: 10px;
+        height: 100px;
+        width: 240px;
+    }
+    #photoshop_skills_image {
+        height: 200px;
+        width: 220px;
+    }
+    #blender_skills_image {
+        height: 260px;
+        width: 260px;
+    }
+    #javascript_skills_image {
+        height: 220px;
+        width: 240px;
+    }
+    #bootstrap_skills_image {
+        margin-top: 20px;
+        height: 200px;
+        width: 240px;
+    }
+    #sql_skills_image {
+        margin-top: 10px;
+        height: 180px;
+        width: 220px;
+    }
+    #mysql_skills_image {
+        margin-top: 5px;
+        height: 220px;
+        width: 220px;
+    }
+    #webstorm_image {
+        margin-top: 20px;
+        height: 220px;
+        width: 220px;
+    }
+}
+/*-----------------------------------------For tablets-----------------------------------------*/
+@media (min-width: 481px) and (max-width: 767px) {
+    #container_of_my_skills {
+        margin: 30px auto;
+        height: auto;
+        width: 90%;
+        gap: 30px;
+    }
+    .my_skills_container {
+        flex-direction: column;
+        gap: 35px;
+    }
+    .my_skills_container h1 {
+        margin-top: 30px;
+        font-size: 30px;
+        color: red;
+    }
+    .skills_container_image {
+        border-radius: 15px;
+        display: inline-block;
+        height: auto;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .skills_container_info {
+        height: auto;
+        width: 100%;
+    }
+    .skills_container_info h1 {
+        margin-top: 35px;
+        color: red;
+    }
+    .skills_container_info p {
+        margin: 20px;
+        font-size: 20px;
+        text-shadow: none;
+    }
+    .my_skills_images {
+        margin-top: 20px;
+        height: 200px;
+        width: 270px;
+    }
+    #ms_office_skills_image {
+        margin-top: 15px;
+        height: 100px;
+        width: 240px;
+    }
+    #photoshop_skills_image {
+        height: 200px;
+        width: 220px;
+    }
+    #blender_skills_image {
+        height: 260px;
+        width: 260px;
+    }
+    #javascript_skills_image {
+        height: 220px;
+        width: 240px;
+    }
+    #bootstrap_skills_image {
+        margin-top: 20px;
+        height: 200px;
+        width: 240px;
+    }
+    #sql_skills_image {
+        margin-top: 10px;
+        height: 180px;
+        width: 220px;
+    }
+    #mysql_skills_image {
+        margin-top: 5px;
+        height: 220px;
+        width: 220px;
+    }
+    #webstorm_image {
+        margin-top: 20px;
+        height: 220px;
+        width: 220px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+    #container_of_my_skills {
+        margin: 30px auto;
+        height: auto;
+        width: 90%;
+        gap: 30px;
+    }
+    .my_skills_container {
+        flex-direction: column;
+        gap: 35px;
+    }
+    .my_skills_container h1 {
+        margin-top: 30px;
+        font-size: 30px;
+        color: red;
+    }
+    .skills_container_image {
+        border-radius: 15px;
+        display: inline-block;
+        height: auto;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .skills_container_info {
+        height: auto;
+        width: 100%;
+    }
+    .skills_container_info h1 {
+        margin-top: 35px;
+        color: red;
+    }
+    .skills_container_info p {
+        margin: 20px;
+        font-size: 20px;
+        text-shadow: none;
+    }
+    .my_skills_images {
+        margin-top: 20px;
+        height: 200px;
+        width: 270px;
+    }
+    #ms_office_skills_image {
+        margin-top: 15px;
+        height: 100px;
+        width: 240px;
+    }
+    #photoshop_skills_image {
+        height: 200px;
+        width: 220px;
+    }
+    #blender_skills_image {
+        height: 260px;
+        width: 260px;
+    }
+    #javascript_skills_image {
+        height: 220px;
+        width: 240px;
+    }
+    #bootstrap_skills_image {
+        margin-top: 20px;
+        height: 200px;
+        width: 240px;
+    }
+    #sql_skills_image {
+        margin-top: 10px;
+        height: 180px;
+        width: 220px;
+    }
+    #mysql_skills_image {
+        margin-top: 5px;
+        height: 220px;
+        width: 220px;
+    }
+    #webstorm_image {
+        margin-top: 20px;
+        height: 220px;
+        width: 220px;
+    }
+}
+/*------------------------------------Small and middle PC's-------------------------------------*/
+@media (min-width: 1025px) and (max-width: 1399px) {
+    #container_of_my_skills {
+        width: 1000px;
+    }
+    .skills_container_image {
+        height: 440px;
+        width: 520px;
+    }
+    .skills_container_info {
+        height: 440px;
+        width: 755px;
+    }
+    .skills_container_info p {
+        font-size: 20px;
+    }
+    .my_skills_images {
+        margin-top: 15px;
+        height: 220px;
+        width: 260px;
+    }
+    #ms_office_skills_image {
+        margin-top: 75px;
+        height: 120px;
+        width: 320px;
+    }
+    #photoshop_skills_image {
+        height: 280px;
+        width: 280px;
+    }
+    #blender_skills_image {
+        height: 300px;
+        width: 300px;
+    }
+    #javascript_skills_image {
+        height: 300px;
+        width: 330px;
+    }
+    #bootstrap_skills_image {
+        margin-top: 10px;
+        height: 300px;
+        width: 340px;
+    }
+    #sql_skills_image {
+        margin-top: 10px;
+        height: 290px;
+        width: 300px;
+    }
+    #mysql_skills_image {
+        margin-top: 20px;
+        height: 260px;
+        width: 260px;
+    }
+    #webstorm_image {
+        margin-top: 15px;
+        height: 245px;
+        width: 245px;
+    }
+}

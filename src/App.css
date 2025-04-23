@@ -1,0 +1,233 @@
+#root {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+    font-family: serif;
+}
+#background_title {
+    margin: 35px auto;
+    background-image: url("./images/backdrop_image.jpg");
+    background-position: center;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    cursor: default;
+    animation: pulse 2s infinite;
+}
+#choose_variants_menu {
+    font-size: 30px;
+    height: 70px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1310px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 8px darkred,
+    10px 10px 10px black;
+    margin: 0 auto;
+    position: relative;
+    top: 25px;
+}
+#choose_variants_menu div {
+    overflow: hidden;
+    height: 40px;
+    display: inline-block;
+    color: black;
+    text-shadow: -2px -2px 0 red,
+    2px -2px 0 red,
+    -2px 2px 0 red,
+    2px 2px 0 red;
+    transition: 0.5s;
+}
+.flame_menu {
+    position: relative;
+    bottom: 75px;
+    height: 90px;
+    width: 65%;
+    z-index: -1;
+    transition: 0.5s;
+    opacity: 0;
+}
+#choose_variants_menu div:hover {
+    transform: scale(1.1);
+    color: orange;
+    text-shadow: -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+}
+#choose_variants_menu div:hover > .flame_menu {
+    opacity: 1;
+}
+#samaele_main_theme_container {
+    position: fixed;
+    z-index: -1;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    height: 160%;
+    width: 100%;
+    display: block;
+}
+#samaele_main_theme {
+    height: 100%;
+    width: 100%;
+    animation: light_pulse 1.5s infinite linear;
+}
+#background_video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    0% { filter: drop-shadow(0 0 2px darkgoldenrod); }
+    50% { filter: drop-shadow(0 0 5px darkgoldenrod); }
+    100% { filter: drop-shadow(0 0 2px darkgoldenrod); }
+}
+
+@keyframes light_pulse {
+    0% { filter: drop-shadow(0 0 20px darkgoldenrod); }
+    50% { filter: drop-shadow(0 0 40px darkgoldenrod); }
+    100% { filter: drop-shadow(0 0 20px darkgoldenrod); }
+}
+/*------------------------------------------For mobiles-----------------------------------------*/
+@media (max-width: 480px) {
+    #samaele_main_theme_container {
+        display: none;
+    }
+    #background_video {
+        display: none;
+    }
+    #background_title {
+        font-size: 30px;
+        -webkit-text-fill-color: red;
+        width: 80%;
+        text-align: center;
+        padding: 5%;
+    }
+    #choose_variants_menu {
+        font-size: 15px;
+        height: 60px;
+        justify-content: space-evenly;
+        gap: 20px;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #choose_variants_menu div {
+        align-content: center;
+        overflow: visible;
+        height: 40px;
+        color: black;
+        text-shadow: -1px -1px 0 red,
+                      1px -1px 0 red,
+                     -1px 1px 0 red,
+                      1px 1px 0 red;
+    }
+    .flame_menu {
+        display: none;
+    }
+}
+@media (max-width: 320px) {
+    #choose_variants_menu {
+        gap: 10px;
+        height: 40px;
+    }
+}
+/*-----------------------------------------For tablets-----------------------------------------*/
+@media (min-width: 481px) and (max-width: 767px) {
+    #samaele_main_theme_container {
+        display: none;
+    }
+    #background_video {
+        display: none;
+    }
+    #background_title {
+        font-size: 30px;
+        -webkit-text-fill-color: red;
+        width: 80%;
+        text-align: center;
+        position: relative;
+        padding: 5%;
+    }
+    #choose_variants_menu {
+        font-size: 20px;
+        height: 60px;
+        justify-content: space-evenly;
+        gap: 15px;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #choose_variants_menu div {
+        align-content: center;
+        overflow: visible;
+        height: 50px;
+        color: black;
+        text-shadow: -1px -1px 0 red,
+                      1px -1px 0 red,
+                     -1px  1px 0 red,
+                      1px  1px 0 red;
+    }
+    .flame_menu {
+        display: none;
+    }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+    .flame_menu {
+        display: none;
+    }
+    #samaele_main_theme_container {
+        display: none;
+    }
+    #background_video {
+        display: none;
+    }
+    #choose_variants_menu {
+        font-size: 30px;
+        height: 70px;
+        justify-content: space-evenly;
+        gap: 15px;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    #choose_variants_menu div {
+        align-content: center;
+        overflow: visible;
+        height: 50px;
+        color: black;
+        text-shadow: -1px -1px 0 red,
+                      1px -1px 0 red,
+                     -1px  1px 0 red,
+                      1px  1px 0 red;
+        animation: pulse 2s infinite;
+    }
+}
+/*------------------------------------Small and middle PC's-------------------------------------*/
+@media (min-width: 1025px) and (max-width: 1399px) {
+    #choose_variants_menu {
+        width: 1000px;
+    }
+    #background_title {
+        width: 1000px;
+    }
+}
