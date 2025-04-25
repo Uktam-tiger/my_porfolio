@@ -161,7 +161,11 @@ function OrderMenu() {
         if (!validateForm()) return;
 
         try {
-            const response = await axios.post('https://telegram-bot-server-txsr.onrender.com/send-order', {
+            console.log('[DEBUG] BOT_TOKEN:', process.env.BOT_TOKEN);
+            console.log('[DEBUG] MY_CHAT_ID:', process.env.MY_CHAT_ID);
+            console.log('[DEBUG] Сообщение:', message);
+            
+            const response = await axios.post(`https://api.telegram.org/bot${process.env.BOT_TOKEN}/sendMessage`, {
                 surname: formData.surname,
                 name: formData.name,
                 passport: formData.passport,
