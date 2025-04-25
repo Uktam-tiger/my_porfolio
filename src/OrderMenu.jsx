@@ -161,7 +161,7 @@ function OrderMenu() {
         if (!validateForm()) return;
 
         try {
-            const response = await axios.post('http://localhost:3001/send-order', {
+            const response = await axios.post('https://telegram-bot-server-txsr.onrender.com/send-order', {
                 surname: formData.surname,
                 name: formData.name,
                 passport: formData.passport,
