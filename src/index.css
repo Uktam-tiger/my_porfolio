@@ -2,10 +2,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-html {
-  background-color: #000000;
-}
-
 body {
   cursor: default;
   user-select: none;
