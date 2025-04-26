@@ -193,8 +193,6 @@ function OrderMenu() {
         }
     };
 
-    console.log(import.meta.env.VITE_API_BOT)
-
     return (
         <>
             <motion.div id="container_of_form"
